@@ -1,3 +1,3 @@
 # python-cv
 
-IMplementations of various Computer Vision algorithms in Python,
+Implementations of various Computer Vision algorithms in Python,
