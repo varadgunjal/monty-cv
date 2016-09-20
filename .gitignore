@@ -1,2 +1,8 @@
 *.zip
+.vscode
+
+# folders
 opencv*
+
+# Individual files
+cv.py
