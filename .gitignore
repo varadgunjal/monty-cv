@@ -1,8 +1,13 @@
+# file types
 *.zip
+*.pyc
+*.png
+*.jpg
 .vscode
 
 # folders
 opencv*
+pyimagesearch*
 
-# Individual files
+# individual files
 cv.py
