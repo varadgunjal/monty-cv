@@ -12,7 +12,7 @@ for (i, c) in enumerate(cnts):
 	cv2.waitKey(0)
 ```
 
-for convenience (Credits : Pyimagesearch)
+for general convenience later (Credits : Pyimagesearch)
 
 - Using the cv2.CHAIN_APPROX_NONE flag, we would be storing every single (x, y)coordinate along the contour. This requires significantly more memory. By using cv2.CHAIN_APPROX_SIMPLE we compress our horizontal, vertical, and diagonal segments into only end-points we are able to reduce memory consumption significantly without any substantial loss in contour accuracy.
 
