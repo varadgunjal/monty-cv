@@ -11,7 +11,7 @@ or the Scharr Kernel
 <img src="./scharr_kernel.png"/>
 
 
-For edge detection, the gradient representation is extremely sensitive to local noise. We need to add in a few more steps to create an actual robust edge detector using the gradient as a building block.
+**NOTE** : For edge detection, the gradient representation is extremely sensitive to local noise. We need to add in a few more steps to create an actual robust edge detector using the gradient as a building block.
 
 
 <h1> Edges </h1>
