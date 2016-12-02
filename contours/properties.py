@@ -17,7 +17,7 @@ def rotated_bounding_rect(contour):
 
 def aspect_ratio(contour):
     (x, y, w, h) = cv2.boundingRect(contour)
-    return w / (float) h
+    return w / float(h)
 
 def extent(contour):
     contour_area = cv2.contourArea(contour)
@@ -25,7 +25,7 @@ def extent(contour):
 
     bounding_rect_area = w * h
 
-    return contour_area / (float) bounding_rect_area
+    return contour_area / float(bounding_rect_area)
 
 def solidity(contour):
     contour_area = cv2.contourArea(contour)
@@ -33,4 +33,10 @@ def solidity(contour):
     hull = cv2.convexHull(contour)
     hull_area = cv2.contourArea(hull)
 
-    return contour_area / (float) hull_area
+    return contour_area / float(hull_area)
+
+def approx_contour(contour):
+    perimeter = cv2.arcLength(contour, True)
+    approx = cv2.approxPolyDP(contour, 0.01 * perimeter, True)
+
+    return approx
